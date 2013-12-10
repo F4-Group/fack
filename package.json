@@ -1,7 +1,7 @@
 {
     "name": "fack",
     "description": "F4 web stack",
-    "version": "0.3.3",
+    "version": "0.3.4",
     "repository": {
         "type": "git",
         "url": "https://github.com/jazzzz/fack.git"
@@ -17,6 +17,7 @@
         "request": "2.12.x",
         "async": "0.2.5",
         "humanize": "~0.0.9",
+        "cli-color": "~0.2.3",
         "mime": "~1.2.11",
         "file": "0.2.x",
         "statsd-client": "0.0.x",
