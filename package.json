@@ -9,7 +9,7 @@
     "dependencies": {
         "express": "~3.4.6",
         "watchify": "0.2.x",
-        "browserify-jade": "git://github.com/jazzzz/browserify-jade#master",
+        "browserify-jade": "git://github.com/Volune/browserify-jade#master",
         "through": "~2.3.4",
         "uglify-js": "1.3.x",
         "optimist": "0.3.x",
