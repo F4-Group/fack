@@ -4,7 +4,7 @@
     "version": "0.4.3",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jazzzz/fack.git"
+        "url": "https://github.com/F4-Group/fack.git"
     },
     "dependencies": {
         "express": "~3.4.6",
