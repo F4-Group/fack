@@ -8,4 +8,5 @@ module.exports = {
     sdc: require('./lib/sdc'),
     optimist: require('./lib/optimist'),
     express: require('./lib/express'),
+    f4ExpressMiddlewares: require('f4-express-middlewares'),
 };
