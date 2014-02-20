@@ -24,6 +24,7 @@
         "statsd-client": "0.0.x",
         "i18next": "1.7.x",
         "browser-resolve": "~1.2.1",
+        "connect-multiparty": "~1.0.3",
         "glob": "3.2.x"
     },
     "peerDependencies": {
