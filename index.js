@@ -1,6 +1,3 @@
-var path = require('path');
-var os = require('os');
-
 var appName = require('./lib/appname')();
 process.title = appName;
 
