@@ -1,6 +1,8 @@
 Fack
 ====
 
+[![NPM](https://nodei.co/npm/fack.png?downloads=true)](https://npmjs.org/package/fack "View this project on NPM")
+
 F4 web stack with:
 
 * express
@@ -10,6 +12,6 @@ F4 web stack with:
 * bootstrap
 * font awesome
 * i18next
-* logule
+* bunyan
 * optimist
 * uglify

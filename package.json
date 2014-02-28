@@ -1,7 +1,7 @@
 {
     "name": "fack",
     "description": "F4 web stack",
-    "version": "0.5.5",
+    "version": "0.6.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/F4-Group/fack.git"
@@ -25,10 +25,12 @@
         "i18next": "1.7.x",
         "browser-resolve": "~1.2.1",
         "connect-multiparty": "~1.0.3",
+        "bunyan": "git://github.com/itayw/node-bunyan.git",
+        "bunyan-prettystream": "~0.1.3",
+        "bunyan-gelf": "git://github.com/craftti/bunyan-gelf",
         "glob": "3.2.x"
     },
     "peerDependencies": {
-        "logule": ">=2.0.0",
         "jade": "*",
         "stylus": "*",
         "nib": "*",
