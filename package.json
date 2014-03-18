@@ -36,6 +36,6 @@
         "nib": "*",
         "browserify": ">=3.3.0",
         "jquery-browserify": "1.8.x",
-        "socket.io-client": ">=0.9.16"
+        "socket.io-client": "*"
     }
 }
