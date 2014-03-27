@@ -8,3 +8,5 @@ module.exports = {
     bunyule: require('./lib/bunyule'),
     f4ExpressMiddlewares: require('f4-express-middlewares'),
 };
+
+module.exports.logger = module.exports.bunyule;
