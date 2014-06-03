@@ -1,3 +1,9 @@
+0.10.2 / 2014-06-03
+===================
+
+  * Fixed bundles on Windows
+  * Fixed URL for bundles in sub-directories
+
 0.10.1 / 2014-06-03
 ===================
 
