@@ -1,3 +1,9 @@
+0.11.0 / 2014-06-05
+===================
+
+  * Can require('fack:i18n') on client for fack translation module
+  * Use i18next ~1.7.3
+
 0.10.2 / 2014-06-03
 ===================
 
