@@ -1,3 +1,8 @@
+0.12.0 / 2014-06-10
+===================
+
+  * IE <= 7 is not supported anymore (trailing commas are not removed)
+
 0.11.0 / 2014-06-05
 ===================
 
