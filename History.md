@@ -1,4 +1,9 @@
-0.13.0 / 2014-06-10
+0.14.0 / 2014-06-23
+===================
+
+  * Upgraded Bootstrap to 3.1.1
+
+0.13.0 / 2014-06-23
 ===================
 
   * font awesome updated to 4.1 and using resourceUrl (allowing for use in sub directories)
