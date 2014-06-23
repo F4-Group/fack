@@ -1,3 +1,8 @@
+0.13.0 / 2014-06-10
+===================
+
+  * font awesome updated to 4.1 and using resourceUrl (allowing for use in sub directories)
+
 0.12.0 / 2014-06-10
 ===================
 

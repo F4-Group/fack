@@ -10,7 +10,7 @@ F4 web stack with:
 * jade
 * stylus
 * bootstrap
-* font awesome
+* font awesome 4.1 from https://github.com/raulghm/Font-Awesome-Stylus
 * i18next
 * bunyan
 * optimist
