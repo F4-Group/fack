@@ -1,3 +1,14 @@
+0.15.1 / 2014-08-12
+===================
+
+  * fix i18n preload
+  * Can set option i18n:false to disable i18next initialisation
+
+0.15.0 / 2014-07-25
+===================
+
+  * i18n cookie disabled by default
+
 0.14.0 / 2014-06-23
 ===================
 
