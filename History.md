@@ -1,4 +1,4 @@
-0.16.1 / 2014-08-13
+0.16.2 / 2014-08-13
 ===================
 
   * Fix incompatibility with browserify 5
