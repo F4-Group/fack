@@ -1,3 +1,8 @@
+0.16.4 / 2014-09-11
+===================
+
+  * Use f4-express-middlewares 0.0.4 (Cache-Control in allow headers) 
+
 0.16.3 / 2014-09-10
 ===================
 
