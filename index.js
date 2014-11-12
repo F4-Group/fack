@@ -1,5 +1,5 @@
-var appName = require('./lib/appname')();
-process.title = appName;
+var processTitle = require('./lib/process-title');
+processTitle.set('starting');
 
 module.exports = {
     sdc: require('./lib/sdc'),
