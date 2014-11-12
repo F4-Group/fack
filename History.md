@@ -1,3 +1,8 @@
+0.17.2 / 2014-11-12
+===================
+
+  * Added process state in process title (starting or listening)
+
 0.17.1 / 2014-10-29
 ===================
 
