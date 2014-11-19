@@ -1,3 +1,9 @@
+0.17.4 / 2014-11-19
+===================
+
+  * Allow to delay build of some javascript files even on prod
+  * Log css compile time and file size
+
 0.17.3 / 2014-11-14
 ===================
 
