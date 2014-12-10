@@ -1,3 +1,8 @@
+0.17.5 / 2014-12-10
+===================
+
+  * Force i18next@1.7.4 (1.7.6 has wrong server-side dependency on jQuery)
+
 0.17.4 / 2014-11-19
 ===================
 

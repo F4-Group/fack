@@ -1,7 +1,7 @@
 {
     "name": "fack",
     "description": "F4 web stack",
-    "version": "0.17.4",
+    "version": "0.17.5",
     "repository": {
         "type": "git",
         "url": "https://github.com/F4-Group/fack.git"
@@ -27,7 +27,7 @@
         "mime": "~1.2.11",
         "file": "0.2.x",
         "statsd-client": "0.0.x",
-        "i18next": "~1.7.3",
+        "i18next": "1.7.4",
         "browser-resolve": "~1.2.1",
         "connect-multiparty": "~1.0.3",
         "bunyan": "git://github.com/itayw/node-bunyan.git",
