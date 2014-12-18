@@ -1,3 +1,4 @@
+/* global fack */
 var $ = require('jquery');
 var _ = require('underscore');
 var i18n = require('i18next/lib/dep/i18next');

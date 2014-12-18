@@ -1,4 +1,5 @@
-module.exports = function(resourcePath) {
+/* global cacheforever */
+module.exports = function (resourcePath) {
     var hash = cacheforever.fingerprints[resourcePath];
     var prefix;
     if (resourcePath && hash)
