@@ -1,7 +1,7 @@
 {
     "name": "fack",
     "description": "F4 web stack",
-    "version": "0.19.0",
+    "version": "0.20.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/F4-Group/fack.git"
@@ -9,7 +9,7 @@
     "main": "./index.js",
     "browser": "./browser/index.js",
     "dependencies": {
-        "express": "~4.0.0",
+        "express": "~4.10.7",
         "cookie-parser": "~1.0.1",
         "express-session": "~1.0.2",
         "body-parser": "~1.0.2",
