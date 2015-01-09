@@ -1,3 +1,8 @@
+0.18.0 / 2015-01-09
+===================
+
+  * Expose cross domain middleware in app.crossDomain
+
 0.17.5 / 2014-12-10
 ===================
 
