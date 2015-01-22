@@ -1,3 +1,13 @@
+0.21.1 / 2015-01-15
+===================
+
+  * Expose application name
+
+0.21.0 / 2015-01-14
+===================
+
+  * js bundles, stylus and views now somehow accept multiple entries
+
 0.20.0 / 2015-01-09
 ===================
 
