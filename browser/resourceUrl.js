@@ -1,10 +1,11 @@
+var constants = require('../lib/constants');
 /* global cacheforever */
 module.exports = function (resourcePath) {
     var hash = cacheforever.fingerprints[resourcePath];
     var prefix;
     if (resourcePath && hash)
-        prefix = "/cacheForever/" + hash;
+        prefix = constants.foreverUrlPrefix + "/" + hash;
     else
-        prefix = '/static';
+        prefix = constants.staticUrlPrefix;
     return prefix + '/' + resourcePath;
 };

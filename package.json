@@ -36,6 +36,7 @@
         "datauri": "~0.5.5",
         "node-etcd": "~2.1.1",
         "etcd-watcher": "~0.5.0",
+        "chokidar": "~1.0.0-rc3",
         "glob": "3.2.x"
     },
     "peerDependencies": {
