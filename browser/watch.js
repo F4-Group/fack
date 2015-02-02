@@ -1,9 +1,13 @@
+/* global fack */
 var constants = require('../lib/constants');
 var $ = require('jquery');
 var _ = require('underscore');
 var io = require('socket.io');
 
-module.exports = watch;
+module.exports = fack.watch ? watch : doNothing;
+
+function doNothing() {
+}
 
 function watch() {
     var socket = io.connect({path: constants.debugSocketIoPath});
