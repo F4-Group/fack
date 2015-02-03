@@ -10,7 +10,7 @@ function doNothing() {
 }
 
 function watch() {
-    var socket = io.connect({path: constants.debugSocketIoPath});
+    var socket = io(constants.debugSocketIoNS);
     socket.on('reloadCss', reloadAllCss);
 }
 
