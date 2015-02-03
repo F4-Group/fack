@@ -1,3 +1,14 @@
+0.22.0 / 2015-02-03
+===================
+
+  * Added `jsUrl` and `cssUrl` functions beside `resourceUrl`
+  * Added CSS live reload: call `fack.watch()` on the client
+
+0.21.2 / 2015-02-02
+===================
+
+  * Fixed CSS compilation
+
 0.21.1 / 2015-01-15
 ===================
 
