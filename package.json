@@ -26,7 +26,7 @@
         "cli-color": "~0.2.3",
         "mime": "~1.2.11",
         "file": "0.2.x",
-        "statsd-client": "0.0.x",
+        "statsd-client": "~0.0.17",
         "i18next": "1.7.4",
         "browser-resolve": "~1.2.1",
         "connect-multiparty": "~1.0.3",
