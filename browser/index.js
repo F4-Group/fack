@@ -10,9 +10,13 @@ module.exports = {
 };
 
 function jsUrl(path) {
-    return resourceUrl(path);
+    return resourceUrl(addExt('js', path));
 }
 
 function cssUrl(path) {
-    return resourceUrl(constants.stylusSubDir + '/' + path);
+    return resourceUrl(constants.stylusSubDir + '/' + addExt('css', path));
+}
+
+function addExt(ext, path) {
+    return new RegExp('\\.' + ext + '$').test(path) ? path : path + '.' + ext;
 }
