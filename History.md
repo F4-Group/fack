@@ -1,3 +1,8 @@
+0.25.0 / 2015-02-17
+===================
+
+  * Add extension automatically on `jsUrl` and `cssUrl` parameter
+
 0.24.4 / 2015-02-16
 ===================
 
