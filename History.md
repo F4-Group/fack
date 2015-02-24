@@ -1,3 +1,8 @@
+0.26.0 / 2015-02-24
+===================
+
+  * synchronous etcd to avoid init problems, and to ensure logger children get correct options
+
 0.25.1 / 2015-02-24
 ===================
 
