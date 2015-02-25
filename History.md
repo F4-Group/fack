@@ -1,3 +1,8 @@
+0.26.2 / 2015-02-25
+===================
+
+  * only log etcd errors in productions (these are expected during dev)
+
 0.26.1 / 2015-02-25
 ===================
 
