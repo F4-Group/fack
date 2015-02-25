@@ -1,3 +1,13 @@
+0.26.4 / 2015-02-25
+===================
+
+  * removed etcd errors. everything required in fack is optional anyway
+
+0.26.3 / 2015-02-25
+===================
+
+  * removed jade & stylus dependencies versions
+
 0.26.2 / 2015-02-25
 ===================
 
