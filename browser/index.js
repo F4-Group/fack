@@ -6,7 +6,6 @@ module.exports = {
     jsUrl: jsUrl,
     cssUrl: cssUrl,
     i18n: require('./i18n'),
-    watch: require('./watch'),
 };
 
 function jsUrl(path) {
