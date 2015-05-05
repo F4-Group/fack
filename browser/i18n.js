@@ -50,7 +50,7 @@ function init(options, callback) {
     } else {
         i18nOptions.ns = {
             namespaces: [namespace, DEFAULT_NAMESPACE],
-            defaultNs: namespace
+            defaultNs: namespace,
         };
         i18nOptions.fallbackNS = [DEFAULT_NAMESPACE];
     }
