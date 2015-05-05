@@ -3,10 +3,12 @@ var $ = require('jquery');
 var _ = require('underscore');
 var i18n = require('i18next/lib/dep/i18next');
 
-exports.t = translate;
-exports.translate = translate;
-exports.init = init;
-exports.ready = ready;
+_.extend(exports, {
+    t: translate,
+    translate: translate,
+    init: init,
+    ready: ready,
+});
 
 var i18nTranslate = null;
 var deferred = $.Deferred();
