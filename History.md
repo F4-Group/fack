@@ -1,3 +1,8 @@
+0.29.0 / 2015-05-21
+===================
+
+  * Allow to configure ajax.global and cache in translation download (default cache=true)
+
 0.28.0 / 2015-05-05
 ===================
 
