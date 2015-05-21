@@ -39,7 +39,6 @@ function init(options, callback) {
     i18n.functions.ajax = function (ajaxOptions) {
         ajaxOptions.global = options.ajaxGlobal;
         ajaxOptions.cache = options.ajaxCache;
-        console.log(arguments);
         ajax.apply(this, arguments);
     };
 
