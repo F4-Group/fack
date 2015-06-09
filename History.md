@@ -1,3 +1,9 @@
+0.31.0 / 2015-06-09
+===================
+
+  * Fix default max-age in CacheForever
+  * CacheForever options customizable
+
 0.30.1 / 2015-06-01
 ===================
 
