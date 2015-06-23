@@ -1,3 +1,8 @@
+0.33.0 / 2015-06-23
+===================
+
+  * Fack answers on /__healthcheck, configurable with option healthCheckUrl
+
 0.32.0 / 2015-06-22
 ===================
 
