@@ -1,3 +1,9 @@
+0.34.0 / 2015-06-24
+===================
+
+  * Read LOG_HOSTNAME and STATSD_PREFIX env vars
+  * node-etcd@4.0.2
+
 0.33.0 / 2015-06-23
 ===================
 
