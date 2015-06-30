@@ -1,3 +1,8 @@
+0.35.0 / 2015-06-30
+===================
+
+  * Improve logger, resolve gelf hostname on start, avoid crash on gelf error
+
 0.34.0 / 2015-06-24
 ===================
 
