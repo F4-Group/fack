@@ -1,3 +1,9 @@
+0.36.0 / 2015-07-02
+===================
+
+  * Give name to logger streams
+  * Expose logger `.level()` and `.levels()`
+
 0.35.1 / 2015-07-01
 ===================
 
