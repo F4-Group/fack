@@ -1,3 +1,8 @@
+0.36.1 / 2015-07-17
+===================
+
+  * Fix incompatibility between bootstrap-stylus and nib (use custom nib version)
+
 0.36.0 / 2015-07-02
 ===================
 
