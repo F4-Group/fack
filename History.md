@@ -1,3 +1,10 @@
+0.38.0 / 2015-07-28
+===================
+
+  * Fix overwritten logger component on multiple `sub` calls
+  * Return bunyan logger with added methods instead of a wrapper
+  * Fix lost message when logging an Error object 
+
 0.37.0 / 2015-07-22
 ===================
 
