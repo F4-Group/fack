@@ -14,7 +14,7 @@
         "express-session": "~1.0.2",
         "body-parser": "~1.0.2",
         "f4-express-middlewares": "git://github.com/F4-Group/f4-express-middlewares.git#0.1.0",
-        "watchify": "0.2.x",
+        "watchify": "~3.3.1",
         "browserify-jade": "~1.0.2",
         "through": "~2.3.4",
         "uglify-js": "~2.4.24",
