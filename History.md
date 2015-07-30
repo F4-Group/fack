@@ -1,3 +1,10 @@
+1.0.0 / 2015-07-30
+===================
+
+  * Added sourcemaps
+  * updated browserify to version 11.0.0 and associated libs
+
+
 0.38.0 / 2015-07-28
 ===================
 
