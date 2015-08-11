@@ -17,6 +17,7 @@
         "watchify": "~3.3.1",
         "browserify-jade": "~1.0.2",
         "through": "~2.3.4",
+        "through2": "~0.6.3",
         "uglify-js": "~2.4.24",
         "aliasify": "~1.7.2",
         "optimist": "0.3.x",
