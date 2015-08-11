@@ -1,8 +1,14 @@
+1.1.0 / 2015-08-11
+===================
+
+  * Allow to minify per file to optimize compile time
+  * Add cache to optimize js compile when watchify is disabled
+
 1.0.1 / 2015-07-30
 ===================
 
   * Added mandatory watchify configuration
-  
+
 1.0.0 / 2015-07-30
 ===================
 
