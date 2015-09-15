@@ -1,52 +1,52 @@
 1.6.0 / 2015-09-15
-===================
+==================
 
   * Added `size` field to compilation logs.
 
 1.5.2 / 2015-09-15
-===================
+==================
 
-  * Fixed npm broken release.  
+  * Fixed npm broken release.
 
 1.5.1 / 2015-09-15
-===================
+==================
 
-  * Fixed `fullPaths` option.  
+  * Fixed `fullPaths` option.
 
 1.5.0 / 2015-09-15
-===================
+==================
 
-  * Removed jade debug instrumentation if in release. 
-  * Added `fullPaths` option: forwarded to browserify.  
+  * Removed jade debug instrumentation if in release.
+  * Added `fullPaths` option: forwarded to browserify.
 
 1.4.0 / 2015-09-15
-===================
+==================
 
   * appname : search into parents directory for a package.json file to get the appname
 
 1.3.0 / 2015-09-02
-===================
+==================
 
-  * Allow to log an Error with additional fields. 
+  * Allow to log an Error with additional fields.
 
 1.2.0 / 2015-08-17
-===================
+==================
 
-  * Added `timeInMs` field to compilation logs 
+  * Added `timeInMs` field to compilation logs
 
 1.1.0 / 2015-08-11
-===================
+==================
 
   * Allow to minify per file to optimize compile time
   * Add cache to optimize js compile when watchify is disabled
 
 1.0.1 / 2015-07-30
-===================
+==================
 
   * Added mandatory watchify configuration
 
 1.0.0 / 2015-07-30
-===================
+==================
 
   * Added sourcemaps
   * updated browserify to version 11.0.0 and associated libs
@@ -57,7 +57,7 @@
 
   * Fix overwritten logger component on multiple `sub` calls
   * Return bunyan logger with added methods instead of a wrapper
-  * Fix lost message when logging an Error object 
+  * Fix lost message when logging an Error object
 
 0.37.0 / 2015-07-22
 ===================
@@ -257,7 +257,7 @@
 0.16.4 / 2014-09-11
 ===================
 
-  * Use f4-express-middlewares 0.0.4 (Cache-Control in allow headers) 
+  * Use f4-express-middlewares 0.0.4 (Cache-Control in allow headers)
 
 0.16.3 / 2014-09-10
 ===================
@@ -315,12 +315,12 @@
 0.10.1 / 2014-06-03
 ===================
 
-  * Fixed critical bug 
+  * Fixed critical bug
 
 0.10.0 / 2014-06-03
 ===================
 
-  * Find JS entry points recursively 
+  * Find JS entry points recursively
 
 0.9.3 / 2014-06-03
 ==================
@@ -331,7 +331,7 @@
 ==================
 
   * Fixed child method (broken in 0.9.1)
-  
+
 0.9.1 / 2014-06-03
 ==================
 
