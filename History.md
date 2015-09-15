@@ -1,3 +1,8 @@
+1.4.0 / 2015-09-15
+===================
+
+  * appname : search into parents directory for a package.json file to get the appname
+
 1.3.0 / 2015-09-02
 ===================
 
