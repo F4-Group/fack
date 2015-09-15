@@ -22,7 +22,7 @@
         "uglifyify": "^3.0.1",
         "aliasify": "~1.7.2",
         "optimist": "0.3.x",
-        "underscore": "~1.4.4",
+        "underscore": "~1.8.3",
         "request": "2.12.x",
         "async": "0.2.5",
         "humanize": "~0.0.9",
