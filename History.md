@@ -1,3 +1,9 @@
+1.5.0 / 2015-09-15
+===================
+
+  * Removed jade debug instrumentation if not in release. 
+  * Added `fullPaths` option: forwarded to browserify.  
+
 1.4.0 / 2015-09-15
 ===================
 
