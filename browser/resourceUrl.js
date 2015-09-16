@@ -1,5 +1,6 @@
 var constants = require('../lib/constants');
-/* global cacheforever */
+var cacheforever = require('fack/cacheforever');
+
 module.exports = function (resourcePath) {
     var hash = cacheforever.fingerprints[resourcePath];
     var prefix;

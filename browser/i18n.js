@@ -1,7 +1,7 @@
-/* global fack */
 var $ = require('jquery');
 var _ = require('underscore');
 var i18n = require('i18next/lib/dep/i18next');
+var fackOptions = require('fack/options');
 
 _.extend(exports, {
     t: translate,
@@ -47,8 +47,7 @@ function init(options, callback) {
         fallbackLng: language,
         lng: language,
     };
-    //fack global variable is injected by fack
-    _.extend(i18nOptions, fack.i18next.options);
+    _.extend(i18nOptions, fackOptions.i18next);
 
     var DEFAULT_NAMESPACE = 'translation';
     var namespace = options.namespace || DEFAULT_NAMESPACE;
