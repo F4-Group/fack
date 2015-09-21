@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 
 app.start(function (server) {
     var io = socketio.listen(server, {
-        logger: logger.sub('socket.io')
+        logger: logger.sub('socket.io'),
     });
     io.on('connection', function (socket) {
         socket.emit('hello');
