@@ -1,3 +1,4 @@
+var uncaughtException = require('./lib/uncaughtException');
 var processTitle = require('./lib/process-title');
 processTitle.set('starting');
 
@@ -11,3 +12,5 @@ module.exports = {
     appName: require('./lib/appname')(),
     i18n: require('i18next'),
 };
+
+uncaughtException.bind();
