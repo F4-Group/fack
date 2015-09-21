@@ -1,3 +1,8 @@
+1.7.1 / 2015-09-21
+==================
+
+  * Fixed debug log level with `--debug` command line option.
+
 1.7.0 / 2015-09-21
 ==================
 
