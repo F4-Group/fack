@@ -1,3 +1,8 @@
+1.7.2 / 2015-09-25
+==================
+
+  * Set Cache-Control to avoid caching if requested md5 and registered md5 are different
+
 1.7.1 / 2015-09-21
 ==================
 
