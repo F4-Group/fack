@@ -14,6 +14,10 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
+app.post('/json', function (req, res) {
+    res.json(req.body);
+});
+
 app.start(function (server) {
     var io = socketio.listen(server, {
         logger: logger.sub('socket.io'),
