@@ -15,6 +15,7 @@ socket.on('hello', function () {
 });
 
 $('.resources')
+    .empty()
     .append('<div>_a url (should be in /cacheForever in production mode): ' + fack.jsUrl('_a') + '</div>')
     .append('<div>index url: ' + fack.jsUrl('index') + '</div>');
 
