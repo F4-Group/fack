@@ -1,3 +1,8 @@
+1.7.5 / 2015-09-30
+==================
+
+  * Wait only 10ms before exit on uncaught exception.
+
 1.7.4 / 2015-09-30
 ==================
 
