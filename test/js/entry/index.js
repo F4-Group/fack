@@ -51,3 +51,10 @@ $.ajax({
             .text(textStatus);
     },
 });
+
+fack.i18n.init('fr', function() {
+    var salut = fack.i18n.translate('Hello');
+    var $i18n = $('.i18n');
+    $i18n.text(salut)
+        .addClass(salut == 'Salut' ? 'ok' : 'not-ok');
+});
