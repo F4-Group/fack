@@ -2,7 +2,19 @@ var fack = require('../');
 var socketio = require('socket.io');
 var logger = fack.logger;
 
-var app = fack.express();
+var app = fack.express({
+    bundles: [
+        {
+            name: 'libs.js',
+            requires: ["jquery"],
+        },
+        {
+            name: 'common.js',
+            factorBundles: ['index.js', 'b.js'],
+            external: ["jquery"],
+        },
+    ],
+});
 
 logger.info('Run with --debug to see debug logs');
 logger.debug('This log should appear with --debug option');
