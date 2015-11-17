@@ -1,3 +1,8 @@
+1.9.0 / 2015-11-17
+==================
+
+  * Support for factor-bundle and requires/external bundles
+
 1.8.0 / 2015-10-02
 ==================
 
