@@ -1,3 +1,8 @@
+1.9.4 / 2015-11-20
+==================
+
+  * Fixed encoded cacheforever paths (with spaces for example).
+
 1.9.0 / 2015-11-17
 ==================
 
