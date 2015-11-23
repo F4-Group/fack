@@ -1,7 +1,23 @@
+1.9.5 / 2015-11-23
+==================
+
+  * moved browserify code to its own file and no longer uses custom browserify fork 
+  * generate js file even with "?" in the url 
+
 1.9.4 / 2015-11-20
 ==================
 
   * Fixed encoded cacheforever paths (with spaces for example).
+
+1.9.3 / 2015-11-20
+==================
+
+  * cacheforever and options now added only when required
+
+1.9.2 / 2015-11-17
+==================
+
+  * properly check buildBundleOnFirstRequest for factorBundle
 
 1.9.0 / 2015-11-17
 ==================
