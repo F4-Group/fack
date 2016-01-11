@@ -1,3 +1,8 @@
+1.10.2 / 2016-01-11
+===================
+
+  * Fixed urls of JS files in subdirectories on Windows.
+
 1.9.5 / 2015-11-23
 ==================
 
