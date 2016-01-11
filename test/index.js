@@ -26,6 +26,10 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
+app.get('/sub', function (req, res) {
+    res.render('sub');
+});
+
 app.post('/json', function (req, res) {
     res.json(req.body);
 });
