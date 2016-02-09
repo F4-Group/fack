@@ -1,3 +1,8 @@
+1.12.0 / 2016-02-09
+===================
+
+  * add DYNO_TYPE_NUMBER (dokku scaling) to statsd and logger data
+
 1.11.0 / 2016-01-29
 ===================
 
