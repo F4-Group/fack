@@ -1,3 +1,8 @@
+1.13.0 / 2016-02-17
+===================
+
+  * added res.logger.ignore() to ignore automatic request logger
+
 1.12.0 / 2016-02-09
 ===================
 
