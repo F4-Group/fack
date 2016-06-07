@@ -16,7 +16,7 @@
 1.11.0 / 2016-01-29
 ===================
 
-  * Pass `app` to `preconfigure` function. 
+  * Pass `app` to `preconfigure` function.
 
 1.10.2 / 2016-01-11
 ===================
@@ -26,8 +26,8 @@
 1.9.5 / 2015-11-23
 ==================
 
-  * moved browserify code to its own file and no longer uses custom browserify fork 
-  * generate js file even with "?" in the url 
+  * moved browserify code to its own file and no longer uses custom browserify fork
+  * generate js file even with "?" in the url
 
 1.9.4 / 2015-11-20
 ==================
