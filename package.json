@@ -27,7 +27,6 @@
         "factor-bundle": "~2.5.0",
         "optimist": "0.3.x",
         "underscore": "~1.8.3",
-        "request": "2.12.x",
         "async": "0.2.5",
         "humanize": "~0.0.9",
         "cli-color": "~0.2.3",
