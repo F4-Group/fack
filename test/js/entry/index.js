@@ -2,6 +2,7 @@ var $ = require('jquery');
 var _ = require('underscore');
 var fack = require('../../../browser');
 var socketio = require('socket.io');
+var es2015 = require('./es2015');
 
 $('.jsOut')
     .addClass('ok')
@@ -52,9 +53,11 @@ $.ajax({
     },
 });
 
-fack.i18n.init('fr', function() {
+fack.i18n.init('fr', function () {
     var salut = fack.i18n.translate('Hello');
     var $i18n = $('.i18n');
     $i18n.text(salut)
         .addClass(salut == 'Salut' ? 'ok' : 'not-ok');
 });
+
+es2015();
