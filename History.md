@@ -1,3 +1,8 @@
+2.3.0 / 2016-07-01
+==================
+
+  * Enabled Babel transform for all node modules 
+
 2.2.0 / 2016-06-09
 ==================
 
