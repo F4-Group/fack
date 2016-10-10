@@ -1,3 +1,8 @@
+2.5.1 / 2016-10-10
+==================
+
+  * Log unhandled express errors using custom logger
+
 2.5.0 / 2016-07-21
 ==================
 
