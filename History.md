@@ -1,3 +1,13 @@
+1.13.2 / 2016-10-20
+===================
+
+  * Log unhandled express errors using custom logger
+
+1.13.1 / 2016-10-20
+===================
+
+  * Send ips in logs as array, not as string
+
 1.13.0 / 2016-02-17
 ===================
 
