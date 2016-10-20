@@ -1,3 +1,8 @@
+1.13.3 / 2016-10-20
+===================
+
+  * Replaced invalid status code 0 with 499 when the client close the connection
+
 1.13.2 / 2016-10-20
 ===================
 
