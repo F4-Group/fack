@@ -1,3 +1,8 @@
+2.5.4 / 2016-10-19
+==================
+
+  * give more time for network logging on Uncaught exception
+
 2.5.3 / 2016-10-19
 ==================
 
