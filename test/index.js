@@ -34,6 +34,11 @@ app.post('/json', function (req, res) {
     res.json(req.body);
 });
 
+app.get('/log', function (req, res) {
+    req.logger.info('Request log');
+    res.send('watch the log');
+});
+
 app.start(function (server) {
     var io = socketio.listen(server, {
         logger: logger.sub('socket.io'),
