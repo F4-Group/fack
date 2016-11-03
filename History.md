@@ -1,3 +1,9 @@
+2.6.0 / 2016-11-03
+==================
+
+  * Never replace fields with dash in logs
+  * Added user agent and referrer in request logger 
+
 2.5.4 / 2016-10-19
 ==================
 
