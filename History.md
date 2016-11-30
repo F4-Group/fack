@@ -1,3 +1,8 @@
+2.6.2 / 2016-11-30
+==================
+
+  * Better handling of i18n options for expressWrapper
+
 2.6.1 / 2016-11-23
 ==================
 
