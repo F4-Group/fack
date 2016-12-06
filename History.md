@@ -1,3 +1,8 @@
+2.6.3 / 2016-12-06
+==================
+
+  * Fixed crash when i18n options for expressWrapper is not defined
+
 2.6.2 / 2016-11-30
 ==================
 
