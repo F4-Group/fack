@@ -1,3 +1,8 @@
+2.7.0 / 2017-01-02
+==================
+
+  * Added `babelify` global and per bundle options (deprecates `babelifyIgnore` bundle option).
+
 2.6.3 / 2016-12-06
 ==================
 

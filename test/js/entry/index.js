@@ -3,6 +3,7 @@ var _ = require('underscore');
 var fack = require('../../../browser');
 var socketio = require('socket.io');
 var es2015 = require('./es2015');
+var sq = require('../lib/sq_exponentiation-operator');
 
 $('.jsOut')
     .addClass('ok')
@@ -61,3 +62,4 @@ fack.i18n.init('fr', function () {
 });
 
 es2015();
+console.log('es2016 working: 42**2=' + sq(42));

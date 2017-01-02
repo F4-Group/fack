@@ -3,6 +3,7 @@ var socketio = require('socket.io');
 var logger = fack.logger;
 
 var app = fack.express({
+    babelify: {"plugins": ["transform-exponentiation-operator"]},
     bundles: [
         {
             name: 'libs.js',
