@@ -1,3 +1,8 @@
+2.7.2 / 2017-01-25
+==================
+
+  * renamed mixins & variables from font awesome to allow importing bootstrap ones
+
 2.7.1 / 2017-01-23
 ==================
 
