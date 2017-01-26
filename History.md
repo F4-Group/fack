@@ -1,3 +1,8 @@
+2.7.3 / 2017-01-26
+==================
+
+  * using custom nib version to allow stylus to really be a peer dependency
+  
 2.7.2 / 2017-01-25
 ==================
 
