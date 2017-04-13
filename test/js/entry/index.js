@@ -4,6 +4,8 @@ var fack = require('../../../browser');
 var socketio = require('socket.io');
 var es2015 = require('./es2015');
 var sq = require('../lib/sq_exponentiation-operator');
+var pugTemplate = require('../templates/test.pug');
+var jadeTemplate = require('../templates/test.jade');
 
 $('.jsOut')
     .addClass('ok')
@@ -60,6 +62,9 @@ fack.i18n.init('fr', function () {
     $i18n.text(salut)
         .addClass(salut == 'Salut' ? 'ok' : 'not-ok');
 });
+$('body')
+    .append(pugTemplate())
+    .append(jadeTemplate());
 
 es2015();
 console.log('es2016 working: 42**2=' + sq(42));
