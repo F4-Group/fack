@@ -1,3 +1,8 @@
+2.7.6 / 2017-05-30
+==================
+
+  * added dnscache to speed up all dns calls (including calls in request)
+
 2.7.5 / 2017-04-19
 ==================
 
