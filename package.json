@@ -28,6 +28,7 @@
         "cookie-parser": "~1.0.1",
         "datauri": "~0.5.5",
         "deasync": "~0.1.7",
+        "dnscache": "~1.0.1",
         "express": "~4.10.7",
         "express-session": "~1.0.2",
         "f4-express-middlewares": "git://github.com/F4-Group/f4-express-middlewares.git#0.1.2",
