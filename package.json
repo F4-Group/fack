@@ -1,7 +1,7 @@
 {
     "name": "fack",
     "description": "F4 web stack",
-    "version": "2.7.7",
+    "version": "2.8.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/F4-Group/fack.git"
