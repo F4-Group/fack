@@ -1,3 +1,8 @@
+3.2.1 / 2017-06-14
+==================
+
+  * Removed vendor prefixes from bootstrap stylus since they're handled by nib anyway. 
+
 3.2.0 / 2017-06-07
 ==================
 
