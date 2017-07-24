@@ -1,3 +1,8 @@
+3.2.2 / 2017-07-24
+==================
+  
+  * Added resolve function in stylus to allow @import to look in node_modules.
+
 3.2.1 / 2017-06-14
 ==================
 
