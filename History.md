@@ -1,3 +1,10 @@
+3.3.0 / 2017-08-01
+==================
+  
+  * Removed Font Awesome dependency on nib: in you need vendor prefix in Font
+  Awesome, import nib in your project before Font Awesome.
+  * Upgraded nib to import nib normalize instead of bootstrap one.
+  
 3.2.2 / 2017-07-24
 ==================
   
