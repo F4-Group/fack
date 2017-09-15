@@ -35,7 +35,7 @@
         "file": "~0.2.2",
         "glob": "3.2.x",
         "humanize": "~0.0.9",
-        "i18next": "1.7.4",
+        "i18next": "git://github.com/F4-Group/i18next-node#1.7.4-1",
         "jquery": "~2.1.1",
         "mime": "~1.3.4",
         "mold-source-map": "~0.4.0",
