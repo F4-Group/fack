@@ -15,6 +15,12 @@ var app = fack.express({
             external: ["jquery"],
         },
     ],
+    preListen: function () {
+        logger.info('preListen callback');
+    },
+    postListen: function () {
+        logger.info('postListen callback');
+    },
 });
 
 logger.info('Run with --debug to see debug logs');
