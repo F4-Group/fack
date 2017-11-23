@@ -56,11 +56,16 @@ $.ajax({
     },
 });
 
-fack.i18n.init('fr', function () {
+fack.i18n.init({
+    language: 'fr',
+    pluralSuffix: '_s',
+}, function () {
     var salut = fack.i18n.translate('Hello');
-    var $i18n = $('.i18n');
-    $i18n.text(salut)
+    $('.i18n').text(salut)
         .addClass(salut == 'Salut' ? 'ok' : 'not-ok');
+    var deuxChevaux = fack.i18n.translate('horse', {count: 2});
+    $('.i18n-config').text(deuxChevaux)
+        .addClass(deuxChevaux == '2 chevaux' ? 'ok' : 'not-ok');
 });
 $('body')
     .append(pugTemplate())
