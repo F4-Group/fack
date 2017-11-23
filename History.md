@@ -1,3 +1,9 @@
+3.5.0 / 2017-11-23
+==================
+  
+  * Removed i18n options `ajaxGlobal` and `ajaxCache`. 
+  * Forward `fack.i18n.init` options to i18next. 
+
 3.4.0 / 2017-09-25
 ==================
   
