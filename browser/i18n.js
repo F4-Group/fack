@@ -58,6 +58,10 @@ function init(options, callback) {
         };
         i18nOptions.fallbackNS = [DEFAULT_NAMESPACE];
     }
+    _.extend(i18nOptions, _.omit(options, [
+        'language',
+        'namespace',
+    ]));
     i18n.init(i18nOptions, function (t) {
         i18nTranslate = t;
         if (callback)
