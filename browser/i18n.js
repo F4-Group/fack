@@ -29,16 +29,14 @@ function init(options, callback) {
             language: options,
         };
     }
-    _.defaults(options, {
-        ajaxGlobal: false,
-        ajaxCache: true,
-    });
 
 //don't want jquery to emit ajaxStart/ajaxStop for i18next requests
     var ajax = i18n.functions.ajax;
     i18n.functions.ajax = function (ajaxOptions) {
-        ajaxOptions.global = options.ajaxGlobal;
-        ajaxOptions.cache = options.ajaxCache;
+        _.extend(ajaxOptions, {
+            global: false,
+            cache: true,
+        });
         ajax.apply(this, arguments);
     };
 
