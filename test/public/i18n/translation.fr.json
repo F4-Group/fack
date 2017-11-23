@@ -1,3 +1,5 @@
 {
-    "Hello" : "Salut"
+    "Hello" : "Salut",
+    "horse": "__count__ cheval",
+    "horse_s": "__count__ chevaux"
 }
