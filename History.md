@@ -1,7 +1,12 @@
+2.12.1 / 2018-06-29
+===================
+  
+  * Fix i18next `backend` option not in i18n options.
+
 2.12.0 / 2018-06-29
 ===================
   
-  * Configurable i18next back via `backend` option.
+  * Configurable i18next backend via `backend` option.
 
 2.11.0 / 2018-01-23
 ==================
