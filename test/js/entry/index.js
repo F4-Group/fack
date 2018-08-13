@@ -1,6 +1,6 @@
 var $ = require('jquery');
 var _ = require('underscore');
-var fack = require('../../../browser');
+var fack = require('../../..');
 var socketio = require('socket.io-client');
 var es2015 = require('./es2015');
 var sq = require('../lib/sq_exponentiation-operator');
