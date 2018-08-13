@@ -17,7 +17,7 @@
         "babel-preset-es2015": "^6.9.0",
         "babelify": "^7.3.0",
         "body-parser": "~1.14.1",
-        "browserify": "~12.0.1",
+        "browserify": "~16.2.2",
         "pugify": "~2.0.1",
         "bunyan": "git://github.com/F4-Group/node-bunyan#1.4.0-1",
         "bunyan-gelf": "git://github.com/F4-Group/bunyan-gelf#0.2.0",
