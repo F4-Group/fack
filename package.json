@@ -16,7 +16,7 @@
         "@babel/preset-env": "^7.0.0",
         "async": "0.2.5",
         "babelify": "^10.0.0",
-        "body-parser": "~1.14.1",
+        "body-parser": "^1.18.3",
         "browserify": "~16.2.2",
         "bunyan": "git://github.com/F4-Group/node-bunyan#1.4.0-1",
         "bunyan-gelf": "git://github.com/F4-Group/bunyan-gelf#0.2.0",
@@ -56,6 +56,6 @@
     "devDependencies": {
         "babel-plugin-transform-exponentiation-operator": "^6.24.1",
         "pug": "~2.0.0-beta11",
-        "stylus": "~0.49.3"
+        "stylus": "^0.54.5"
     }
 }
