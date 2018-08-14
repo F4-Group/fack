@@ -26,7 +26,6 @@
         "datauri": "~0.5.5",
         "dnscache": "~1.0.1",
         "express": "~4.16.3",
-        "f4-express-middlewares": "git://github.com/F4-Group/f4-express-middlewares.git#0.1.2",
         "factor-bundle": "~2.5.0",
         "file": "~0.2.2",
         "glob": "3.2.x",
