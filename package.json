@@ -32,15 +32,12 @@
         "glob": "3.2.x",
         "humanize": "~0.0.9",
         "i18next": "git://github.com/F4-Group/i18next-node#1.7.4-1",
-        "jquery": "~2.1.1",
         "mime": "~1.3.4",
         "mold-source-map": "~0.4.0",
         "nib": "git://github.com/F4-Group/nib#1.1.2+f4",
         "node-etcd": "~4.2.1",
         "optimist": "0.3.x",
         "pugify": "~2.0.1",
-        "socket.io": "~1.4.8",
-        "socket.io-client": "~1.4.8",
         "statsd-client": "~0.0.17",
         "terser": "^3.8.1",
         "through": "~2.3.4",
@@ -50,12 +47,16 @@
         "watchify": "~3.6.1"
     },
     "peerDependencies": {
+        "jquery": "*",
         "pug": "*",
         "stylus": "*"
     },
     "devDependencies": {
         "babel-plugin-transform-exponentiation-operator": "^6.24.1",
+        "jquery": "~2.1.1",
         "pug": "~2.0.0-beta11",
+        "socket.io": "~1.4.8",
+        "socket.io-client": "~1.4.8",
         "stylus": "^0.54.5"
     }
 }
