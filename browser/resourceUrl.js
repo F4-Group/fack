@@ -1,12 +1,13 @@
-var constants = require('../lib/constants');
-var cacheforever = require('fack/cacheforever');
+const constants = require('../lib/constants');
+const cacheforever = require('fack/cacheforever');
 
 module.exports = function (resourcePath) {
-    var hash = cacheforever.fingerprints[resourcePath];
-    var prefix;
-    if (resourcePath && hash)
+    const hash = cacheforever.fingerprints[resourcePath];
+    let prefix;
+    if (resourcePath && hash) {
         prefix = constants.foreverUrlPrefix + "/" + hash;
-    else
+    } else {
         prefix = constants.staticUrlPrefix;
+    }
     return prefix + '/' + resourcePath;
 };

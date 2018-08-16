@@ -1,5 +1,5 @@
-var resourceUrl = require('./resourceUrl');
-var constants = require('../lib/constants');
+const resourceUrl = require('./resourceUrl');
+const constants = require('../lib/constants');
 
 module.exports = {
     resourceUrl: resourceUrl,
