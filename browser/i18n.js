@@ -3,12 +3,12 @@ var _ = require('underscore');
 var i18n = require('i18next/lib/dep/i18next');
 var fackOptions = require('fack/options');
 
-_.extend(exports, {
+module.exports = {
     t: translate,
     translate: translate,
     init: init,
     ready: ready,
-});
+};
 
 var i18nTranslate = null;
 var deferred = $.Deferred();
