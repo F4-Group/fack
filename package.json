@@ -39,7 +39,6 @@
         "pugify": "^2.2.0",
         "statsd-client": "~0.0.17",
         "terser": "^3.8.1",
-        "through": "~2.3.4",
         "through2": "~0.6.3",
         "uglifyify": "^5.0.1",
         "underscore": "~1.8.3",
