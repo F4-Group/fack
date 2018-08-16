@@ -1,5 +1,5 @@
 var $ = require('jquery');
-var _ = require('underscore');
+var _ = require('lodash');
 var fack = require('../../..');
 var socketio = require('socket.io-client');
 var es2015 = require('./es2015');

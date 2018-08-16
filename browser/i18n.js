@@ -1,5 +1,5 @@
 const $ = require('jquery');
-const _ = require('underscore');
+const _ = require('lodash');
 const i18n = require('i18next/lib/dep/i18next');
 const fackOptions = require('fack/options');
 
