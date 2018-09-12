@@ -1,3 +1,24 @@
+4.0.0 / 2018-09-12
+==================
+
+  * Upgraded Browserify to v16.
+  * Upgraded Babel to v7.
+  * babelify can now be disabled by setting the option `babelify` to `false`.
+  * Removed deprecated `jadeify` and `babelifyIgnore` options.
+  * Removed aliasify transform.
+  * Removed deprecated crossdomainMiddleware middleware. Use [cors](https://github.com/expressjs/cors) instead.
+  * Removed cookie-parser middleware.
+  * Removed express-session middleware.
+  * Removed globalpassword middleware.
+  * Removed etagify middleware (included with express).
+  * Removed dataurify middleware.
+  * Removed stringify middleware.
+  * Removed multipart middleware.
+  * Allow transform options: `{transform: Function, options: Object}`.
+  * Transforms are not global anymore by default.
+  * Pug files are now babelified.     
+  * Removed stylus debug info.
+
 3.6.0 / 2018-08-02
 ==================
   

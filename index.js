@@ -11,7 +11,6 @@ module.exports = {
     express: require('./lib/express'),
     bunyule: require('./lib/bunyule'),
     logger: require('./lib/bunyule'),
-    f4ExpressMiddlewares: require('f4-express-middlewares'),
     appName: require('./lib/appname')(),
     hostname: require('./lib/hostname'),
     i18n: require('i18next'),
