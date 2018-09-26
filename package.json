@@ -11,6 +11,18 @@
     "engines": {
         "node": ">=4.0.0"
     },
+    "browserify": {
+        "transform": [
+            [
+                "babelify",
+                {
+                    "presets": [
+                        "@babel/preset-env"
+                    ]
+                }
+            ]
+        ]
+    },
     "dependencies": {
         "@babel/core": "^7.0.0",
         "@babel/preset-env": "^7.0.0",
