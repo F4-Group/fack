@@ -2,7 +2,10 @@ const $ = require('jquery');
 const isString = require('lodash/isString');
 const extend = require('lodash/extend');
 const omit = require('lodash/omit');
+const oldJquery = window.jQuery;
+window.jQuery = $;
 const i18n = require('i18next/lib/dep/i18next');
+window.jQuery = oldJquery;
 const fackOptions = require('fack/options');
 
 module.exports = {
