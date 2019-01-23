@@ -2,18 +2,19 @@ const $ = require('jquery');
 const isString = require('lodash/isString');
 const extend = require('lodash/extend');
 const omit = require('lodash/omit');
+const defaults = require('lodash/defaults');
 const oldJquery = window.jQuery;
 window.jQuery = $;
 const i18n = require('i18next/lib/dep/i18next');
 window.jQuery = oldJquery;
 const fackOptions = require('fack/options');
 
-module.exports = {
+module.exports = defaults({
     t: translate,
     translate,
     init,
     ready,
-};
+}, i18n);
 
 let i18nTranslate = null;
 const deferred = $.Deferred();
