@@ -10,9 +10,9 @@ const fackOptions = require('fack/options');
 
 module.exports = {
     t: translate,
-    translate: translate,
-    init: init,
-    ready: ready,
+    translate,
+    init,
+    ready,
 };
 
 let i18nTranslate = null;
