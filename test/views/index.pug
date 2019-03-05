@@ -1,29 +1,10 @@
 doctype html
 html
     head
-        title fack test
+        title fack tests
         link(rel="stylesheet", type="text/css", href=cssUrl("index"))
     body.container
-        h1 fack test
-        .faTest
-            | Font Awesome: 
-            i.fa.fa-thumbs-up
-        .jsOut JS...
-        .socketioOut Socket.io...
-        .resources Resources...
-        .jsonMiddleware JSON middleware...
-        .i18n i18n...
-        .i18n-config i18n with config for custom plural suffix...
-        .es2015 ES 2015...
-        .resolveInStylus Resolve dans Stylus. Affiche un point d'exclamation:&#32;
-            span.iconic.home
-        a(href='/sub') Test JS in a subdirectory
-        h1 H1
-        h2 H2
-        h3 H3
-        h4 H4
-        h5 H5
-
-    script(src=jsUrl("libs"))
-    script(src=jsUrl("common"))
-    script(src=jsUrl("index"))
+        h1 fack tests
+        ul
+            li: a(href='/test') Test
+            li: a(href='/testModern') Test of bundles for modern browsers

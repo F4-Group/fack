@@ -2,6 +2,17 @@ var fack = require('../');
 var socketio = require('socket.io');
 var logger = fack.logger;
 
+const MODERN_BABELIFY_CONFIG = {
+    presets: [
+        [
+            "@babel/preset-env",
+            {
+                targets: "> 5%",
+            },
+        ],
+    ]
+};
+
 var app = fack.express({
     babelify: {"plugins": ["transform-exponentiation-operator"]},
     bundles: [
@@ -13,6 +24,22 @@ var app = fack.express({
             name: 'common.js',
             factorBundles: ['index.js', 'b.js'],
             external: ["jquery"],
+        },
+        {
+            name: 'indexModern.js',
+            entryPoint: 'index.js',
+            babelify: MODERN_BABELIFY_CONFIG,
+        },
+        {
+            name: 'bModern.js',
+            entryPoint: 'b.js',
+            babelify: MODERN_BABELIFY_CONFIG,
+        },
+        {
+            name: 'commonModern.js',
+            factorBundles: ['indexModern.js', 'bModern.js'],
+            external: ["jquery"],
+            babelify: MODERN_BABELIFY_CONFIG,
         },
     ],
     preListen: function () {
@@ -31,6 +58,26 @@ logger.fatal('Test fatal log');
 
 app.get('/', function (req, res) {
     res.render('index');
+});
+
+app.get('/test', function (req, res) {
+    res.render('test', {
+        scripts: [
+            "libs",
+            "common",
+            "index",
+        ],
+    });
+});
+
+app.get('/testModern', function (req, res) {
+    res.render('test', {
+        scripts: [
+            "libs",
+            "commonModern",
+            "indexModern",
+        ],
+    });
 });
 
 app.get('/sub', function (req, res) {
