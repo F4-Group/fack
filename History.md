@@ -1,3 +1,10 @@
+4.2.0 / 2019-03-06
+==================
+
+  * Upgraded Babel to v7.3.
+  * Bundle entry points can now be specified with the file extension.
+  * The bundles configuration is now correctly used in factored bundles. 
+  
 4.1.0 / 2019-01-23
 ==================
 
