@@ -1,3 +1,8 @@
+4.2.1 / 2019-04-26
+==================
+
+  * Upgraded bunyan-gelf to 0.3.0 to use only one socket for all logs, avoiding a crash when sending too many logs at once and running out of available ports
+
 4.2.0 / 2019-03-06
 ==================
 
