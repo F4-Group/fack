@@ -1,15 +1,12 @@
 const $ = require('jquery');
-const isString = require('lodash/isString');
-const extend = require('lodash/extend');
-const omit = require('lodash/omit');
-const defaults = require('lodash/defaults');
+const _ = require('lodash');
 const oldJquery = window.jQuery;
 window.jQuery = $;
 const i18n = require('i18next/lib/dep/i18next');
 window.jQuery = oldJquery;
 const fackOptions = require('fack/options');
 
-module.exports = defaults({
+module.exports = _.defaults({
     t: translate,
     translate,
     init,
@@ -31,7 +28,7 @@ function translate(key) {
 }
 
 function init(options, callback) {
-    if (isString(options)) {
+    if (_.isString(options)) {
         options = {
             language: options,
         };
@@ -40,7 +37,7 @@ function init(options, callback) {
     //don't want jquery to emit ajaxStart/ajaxStop for i18next requests
     const ajax = i18n.functions.ajax;
     i18n.functions.ajax = function (ajaxOptions) {
-        extend(ajaxOptions, {
+        _.extend(ajaxOptions, {
             global: false,
             cache: true,
         });
@@ -52,7 +49,7 @@ function init(options, callback) {
         fallbackLng: language,
         lng: language,
     };
-    extend(i18nOptions, fackOptions.i18next);
+    _.extend(i18nOptions, fackOptions.i18next);
 
     const DEFAULT_NAMESPACE = 'translation';
     const namespace = options.namespace || DEFAULT_NAMESPACE;
@@ -65,7 +62,7 @@ function init(options, callback) {
         };
         i18nOptions.fallbackNS = [DEFAULT_NAMESPACE];
     }
-    extend(i18nOptions, omit(options, [
+    _.extend(i18nOptions, _.omit(options, [
         'language',
         'namespace',
     ]));
