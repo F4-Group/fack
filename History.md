@@ -1,3 +1,10 @@
+4.3.1 / 2019-07-29
+==================
+
+  * Fix logged css sizes
+  * Ensure dyno identifier used for sdc is usable
+  * Require full lodash module instead of single modules
+
 4.3.0 / 2019-05-20
 ==================
 
