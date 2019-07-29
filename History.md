@@ -1,7 +1,15 @@
+4.3.1 / 2019-07-29
+==================
+
+  * Fix logged css sizes
+  * Ensure dyno identifier used for sdc is usable
+  * Require full lodash module instead of single modules
+
 4.3.0 / 2019-05-20
 ==================
 
   * Update node-etcd to version 7.0.0 for node 10 compatibility (due to deasync dependency). This should work for node 6 and above.
+  * Minify CSS in production mode with clean-css.
 
 4.2.1 / 2019-04-26
 ==================
