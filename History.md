@@ -2,6 +2,7 @@
 ==================
 
   * Update node-etcd to version 7.0.0 for node 10 compatibility (due to deasync dependency). This should work for node 6 and above.
+  * Minify CSS in production mode with clean-css.
 
 4.2.1 / 2019-04-26
 ==================
