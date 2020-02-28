@@ -94,6 +94,13 @@ app.get('/log', function (req, res) {
     res.send('watch the log');
 });
 
+app.get('/error', function (req, res) {
+    res
+        .status(500)
+        .setError(new Error('Response error'))
+        .send('watch the log');
+});
+
 app.start(function (server) {
     const io = socketio.listen(server, {
         logger: logger.sub('socket.io'),
