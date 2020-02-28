@@ -1,3 +1,9 @@
+4.4.0 / 2020-02-28
+==================
+
+  * Add `res.logger` logger.
+  * Add `res.setError` to set an error to be logged with the end of request log.
+
 4.3.1 / 2019-07-29
 ==================
 
