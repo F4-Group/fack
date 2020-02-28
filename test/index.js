@@ -10,7 +10,7 @@ const MODERN_BABELIFY_CONFIG = {
                 targets: "> 5%",
             },
         ],
-    ]
+    ],
 };
 
 const app = fack.express({
