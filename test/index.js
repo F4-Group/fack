@@ -90,6 +90,7 @@ app.post('/json', function (req, res) {
 
 app.get('/log', function (req, res) {
     req.logger.info('Request log');
+    res.logger.info('Response log');
     res.send('watch the log');
 });
 
