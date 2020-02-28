@@ -1,6 +1,6 @@
-var fack = require('../');
-var socketio = require('socket.io');
-var logger = fack.logger;
+const fack = require('../');
+const socketio = require('socket.io');
+const logger = fack.logger;
 
 const MODERN_BABELIFY_CONFIG = {
     presets: [
@@ -13,7 +13,7 @@ const MODERN_BABELIFY_CONFIG = {
     ]
 };
 
-var app = fack.express({
+const app = fack.express({
     babelify: {"plugins": ["transform-exponentiation-operator"]},
     bundles: [
         {
@@ -94,7 +94,7 @@ app.get('/log', function (req, res) {
 });
 
 app.start(function (server) {
-    var io = socketio.listen(server, {
+    const io = socketio.listen(server, {
         logger: logger.sub('socket.io'),
     });
     io.on('connection', function (socket) {
