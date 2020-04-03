@@ -1,3 +1,8 @@
+4.4.1 / 2020-04-03
+==================
+
+  * Use DYNO when defined to replace DYNO_TYPE_NUMBER (dokku scaling) in statsd and logger data
+  
 4.4.0 / 2020-02-28
 ==================
 
