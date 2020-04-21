@@ -1,3 +1,9 @@
+2.12.3 / 2020-04-03
+==================
+  
+  * Ensure dyno identifier used for sdc is usable
+  * Use DYNO when defined to replace DYNO_TYPE_NUMBER (dokku scaling) in statsd and logger data
+
 2.12.2 / 2018-07-02
 ===================
   
