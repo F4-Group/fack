@@ -1,3 +1,11 @@
+4.5.0 / 2020-05-26
+==================
+  
+  * Export `uniqueProcessName` to be able to uniquely identify a dokku process
+  When starting processes on many hosts, with dokku scale, we sometimes
+  need a unique name for locks and synchronization.
+
+
 4.4.1 / 2020-04-03
 ==================
 
