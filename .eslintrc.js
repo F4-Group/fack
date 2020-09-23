@@ -3,9 +3,13 @@ module.exports = {
         "browser": true,
         "commonjs": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "mocha": true,
     },
-    "extends": "eslint:recommended",
+    "plugins": [
+        "mocha"
+    ],
+    "extends": ["eslint:recommended", "plugin:mocha/recommended"],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"

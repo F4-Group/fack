@@ -101,6 +101,25 @@ app.get('/error', function (req, res) {
         .send('watch the log');
 });
 
+app.get('/internals', function (req, res) {
+    const {
+        appName,
+        uniqueProcessName,
+        hostname,
+        sdc: {
+            options: {
+                prefix: sdcPrefix,
+            }
+        }
+    } = fack;
+    res.json({
+        appName,
+        uniqueProcessName,
+        hostname,
+        sdcPrefix,
+    });
+});
+
 app.start(function (server) {
     const io = socketio.listen(server, {
         logger: logger.sub('socket.io'),
