@@ -1,4 +1,4 @@
-const fack = require('../');
+const fack = require('../../index');
 const socketio = require('socket.io');
 const logger = fack.logger;
 
