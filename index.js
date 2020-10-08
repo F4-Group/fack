@@ -1,5 +1,5 @@
-var uncaughtException = require('./lib/uncaughtException');
-var processTitle = require('./lib/process-title');
+const uncaughtException = require('./lib/uncaughtException');
+const processTitle = require('./lib/process-title');
 processTitle.set('starting');
 require('dnscache')({
     enable: true,

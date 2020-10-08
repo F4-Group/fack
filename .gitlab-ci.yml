@@ -1,0 +1,18 @@
+image: node:12.18.3-buster
+
+before_script:
+- 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+- eval $(ssh-agent -s)
+- ssh-add <(echo "$SSH_PRIVATE_KEY")
+- mkdir -p ~/.ssh
+- '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+- npm install
+
+cache:
+    key: node-12
+    paths:
+    - node_modules
+
+code_style:
+    script:
+    - npm run test-code-style

@@ -1,3 +1,3 @@
 module.exports = function (n) {
-    return n**2;
+    return n ** 2;
 };
