@@ -1,3 +1,10 @@
+4.5.1 / 2020-12-15
+==================
+
+  * Log the HTTP method and url with the request/response logger.
+  * Fix ignored error when failing to read the Stylus files list.
+  * Disable Stylus compression and let clean-css handle it.
+
 4.5.0 / 2020-05-26
 ==================
   
