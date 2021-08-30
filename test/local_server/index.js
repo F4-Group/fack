@@ -1,4 +1,4 @@
-const fack = require('../');
+const fack = require('../../index');
 const socketio = require('socket.io');
 const logger = fack.logger;
 
@@ -99,6 +99,25 @@ app.get('/error', function (req, res) {
         .status(500)
         .setError(new Error('Response error'))
         .send('watch the log');
+});
+
+app.get('/internals', function (req, res) {
+    const {
+        appName,
+        uniqueProcessName,
+        hostname,
+        sdc: {
+            options: {
+                prefix: sdcPrefix,
+            }
+        }
+    } = fack;
+    res.json({
+        appName,
+        uniqueProcessName,
+        hostname,
+        sdcPrefix,
+    });
 });
 
 app.start(function (server) {

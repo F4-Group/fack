@@ -16,3 +16,7 @@ cache:
 code_style:
     script:
     - npm run test-code-style
+
+test:
+    script:
+    - npm test
