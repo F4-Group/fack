@@ -1,3 +1,8 @@
+3.6.2 / 2021-11-19
+==================
+
+  * Use secure git protocol for GitHub dependencies
+
 3.6.1 / 2020-04-03
 ==================
   
