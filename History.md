@@ -1,3 +1,10 @@
+4.5.3 / 2021-11-19
+==================
+
+  * Use secure git protocol for GitHub dependencies
+  * Switch back to official `bunyan`
+  * Update `pug` and `stylus` used in tests
+
 4.5.2 / 2020-12-15
 ==================
 
