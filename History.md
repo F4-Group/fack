@@ -1,3 +1,9 @@
+2.13.2 / 2021-11-30
+==================
+
+  * Switch back to official `bunyan`
+  * Update `bunyan-gelf` to 0.3.0
+
 2.13.1 / 2021-11-19
 ==================
 
