@@ -47,6 +47,17 @@ describe('uniqueProcessName', function () {
         expect(uniqueProcessName).to.equal('fack_hostname_' + DYNO);
     });
 
+    it('Ensure default unique process name does not contain undefined from missing dyno', async function () {
+        const port = LOCAL_SERVER_PORT++;
+        handle = await runLocalServer(port, {
+            LOG_HOSTNAME: 'hostname',
+        });
+        const {data: {uniqueProcessName}} = await axios({
+            url: `http://127.0.0.1:${port}/internals`,
+        });
+        expect(uniqueProcessName).to.equal('fack_hostname');
+    });
+
     it(`Use APP_INSTANCE_NAME`, async function () {
         const port = LOCAL_SERVER_PORT++;
         const appInstanceName = "test_instance_app";
@@ -60,7 +71,16 @@ describe('uniqueProcessName', function () {
         });
         expect(uniqueProcessName).to.equal(appInstanceName);
     });
+});
 
+describe('sdcPrefix', function () {
+    this.timeout(10e3); // fack takes some time to init
+    let handle;
+    afterEach(function () {
+        if (handle) {
+            handle.exit();
+        }
+    });
     it(`Ensure prefix is used when STATSD_APPNAME is not set`, async function () {
         const port = LOCAL_SERVER_PORT++;
         handle = await runLocalServer(port, {
