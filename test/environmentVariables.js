@@ -60,7 +60,16 @@ describe('uniqueProcessName', function () {
         });
         expect(uniqueProcessName).to.equal(appInstanceName);
     });
+});
 
+describe('sdcPrefix', function () {
+    this.timeout(10e3); // fack takes some time to init
+    let handle;
+    afterEach(function () {
+        if (handle) {
+            handle.exit();
+        }
+    });
     it(`Ensure prefix is used when STATSD_APPNAME is not set`, async function () {
         const port = LOCAL_SERVER_PORT++;
         handle = await runLocalServer(port, {
