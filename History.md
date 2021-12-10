@@ -1,3 +1,8 @@
+4.5.4 / 2021-12-10
+==================
+
+  * Skip dyno in process unique name when not provided
+
 4.5.3 / 2021-11-19
 ==================
 
