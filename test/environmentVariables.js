@@ -47,6 +47,17 @@ describe('uniqueProcessName', function () {
         expect(uniqueProcessName).to.equal('fack_hostname_' + DYNO);
     });
 
+    it('Ensure default unique process name does not contain undefined from missing dyno', async function () {
+        const port = LOCAL_SERVER_PORT++;
+        handle = await runLocalServer(port, {
+            LOG_HOSTNAME: 'hostname',
+        });
+        const {data: {uniqueProcessName}} = await axios({
+            url: `http://127.0.0.1:${port}/internals`,
+        });
+        expect(uniqueProcessName).to.equal('fack_hostname');
+    });
+
     it(`Use APP_INSTANCE_NAME`, async function () {
         const port = LOCAL_SERVER_PORT++;
         const appInstanceName = "test_instance_app";
