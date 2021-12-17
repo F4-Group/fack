@@ -8,7 +8,10 @@
 
   * Use secure git protocol for GitHub dependencies
   * Switch back to official `bunyan`
-  * Update `pug` and `stylus` used in tests
+  * Accept environment variables `APP_INSTANCE_NAME` (used as a unique process name, that stays the same over successive 
+    deployments, and to identify app in logging, defaults to `appname_hostname_dyno`) and `STATSD_APPNAME` (used to identify app in
+    statsd and graphite, defaults to `statsDPrefix.appname-dyno` where `statsDPrefix` is either env `STATSD_PREFIX`, or etcd
+    `/server/statsd/prefix` or hostname)
 
 4.5.2 / 2020-12-15
 ==================
