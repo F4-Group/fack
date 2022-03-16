@@ -15,6 +15,7 @@ module.exports = {
     hostname: require('./lib/hostname'),
     i18n: require('i18next'),
     uniqueProcessName: require('./lib/uniqueProcessName'),
+    buildBundles: require('./lib/buildBundles'),
 };
 
 uncaughtException.bind();
