@@ -1,3 +1,10 @@
+4.6.0 / 2022-03-23
+==================
+
+  * Downgrade express error handler log from fatal to error
+  * Export `buildBundles` to generate bundles files
+  * Load bundles from files if they are available, for production mode only
+
 4.5.4 / 2021-12-10
 ==================
 
