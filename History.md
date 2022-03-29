@@ -1,3 +1,9 @@
+next
+===
+
+  * The `pugify` option can now take an object, containing the Pug compiler options,
+    allowing for example to set the default doctype.
+
 4.6.0 / 2022-03-23
 ==================
 
