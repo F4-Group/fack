@@ -1,5 +1,5 @@
-next
-===
+4.7.0 / 2022-04-01
+==================
 
   * The `pugify` option can now take an object, containing the Pug compiler options,
     allowing for example to set the default doctype.
