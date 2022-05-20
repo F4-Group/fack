@@ -1,3 +1,4 @@
+const path = require('path');
 const fack = require('../../index');
 const socketio = require('socket.io');
 const logger = fack.logger;
@@ -14,6 +15,9 @@ const MODERN_BABELIFY_CONFIG = {
 };
 
 const app = fack.express({
+    views: path.join(__dirname, 'views'),
+    public: path.join(__dirname, 'public'),
+    js: path.join(__dirname, 'js'),
     babelify: {"plugins": ["transform-exponentiation-operator"]},
     bundles: [
         {

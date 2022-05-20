@@ -1,3 +1,9 @@
+4.7.1 / 2022-05-20
+==================
+
+  * The root directory where the `public`, `views` and `js` are now correctly located at
+    the project root directory instead of the main file directory.
+
 4.7.0 / 2022-04-01
 ==================
 
