@@ -1,3 +1,8 @@
+4.8.0 / 2023-06-01
+==================
+
+  * Send all errors own properties in the logs (only visible in the GELF output).  
+
 4.7.1 / 2022-05-20
 ==================
 
