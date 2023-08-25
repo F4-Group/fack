@@ -1,3 +1,8 @@
+4.8.1 / 2023-08-25
+==================
+
+  * Fix ignored 'pugify' option in bundle configuration  
+
 4.8.0 / 2023-06-01
 ==================
 
