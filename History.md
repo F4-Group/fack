@@ -1,3 +1,9 @@
+4.8.2 / 2023-08-25
+==================
+
+  * Upgrade Terser to v5. See all bug fixes in the
+    [changelog](https://github.com/terser/terser/blob/master/CHANGELOG.md).
+
 4.8.1 / 2023-08-25
 ==================
 
