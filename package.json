@@ -39,7 +39,7 @@
         "body-parser": "^1.18.3",
         "browserify": "~16.2.2",
         "bunyan": "^1.8.15",
-        "bunyan-gelf": "git+https://github.com/F4-Group/bunyan-gelf#0.3.0",
+        "bunyan-gelf": "git+https://github.com/F4-Group/bunyan-gelf#0.3.1",
         "bunyan-prettystream": "~0.1.3",
         "clean-css": "^4.2.1",
         "cli-color": "~0.2.3",
