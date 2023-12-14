@@ -2,6 +2,7 @@
 
 variables:
     NODE_VERSION: 12.18.3-buster
+    DOCKER_YAMLLINT_VERSION: 2.0.0
 
 include:
 -   project: f4/gitlab-ci-tools
