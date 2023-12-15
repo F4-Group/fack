@@ -1,17 +1,13 @@
-image: node:12.18.3-buster
+---
 
-before_script:
-- 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-- eval $(ssh-agent -s)
-- ssh-add <(echo "$SSH_PRIVATE_KEY")
-- mkdir -p ~/.ssh
-- '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-- npm install
+variables:
+    NODE_VERSION: 12.18.3-buster
+    DOCKER_YAMLLINT_VERSION: 2.0.0
 
-cache:
-    key: node-12
-    paths:
-    - node_modules
+include:
+-   project: f4/gitlab-ci-tools
+    ref: master
+    file: /templates/node-js.yml
 
 code_style:
     script:
