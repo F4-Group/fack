@@ -102,4 +102,15 @@ describe('sdcPrefix', function () {
         });
         expect(sdcPrefix).to.equal(`${STATSD_APPNAME}.`);
     });
+
+    it(`Ensure WORKER_NAME is used`, async function () {
+        const WORKER_NAME = "worker-name";
+        handle = await runLocalServer({
+            WORKER_NAME,
+        });
+        const {data: {sdcPrefix}} = await axios({
+            url: `http://127.0.0.1:${handle.port}/internals`,
+        });
+        expect(sdcPrefix).to.include(`${WORKER_NAME}.`);
+    });
 });

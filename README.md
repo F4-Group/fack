@@ -24,5 +24,7 @@ F4 web stack with:
 * `DYNO`: mainly for dokku scaling, to identify "instance" (can also be provided as `DYNO_TYPE_NUMBER`, for retro-compatibility)
 * `APP_INSTANCE_NAME`: used as a unique process name, that stays the same over successive deployments, and to identify app in 
   logging, defaults to `appname_hostname_dyno`
-* `STATSD_APPNAME`: used to identify app in statsd and graphite, defaults to `statsDPrefix.appname-dyno` where `statsDPrefix` is 
-  either env `STATSD_PREFIX`, or etcd `/server/statsd/prefix` or hostname
+* `STATSD_APPNAME`: used to identify app in statsd and graphite, defaults to `statsDPrefix.appname-dyno-workerName` where
+  `statsDPrefix` is either env `STATSD_PREFIX` or etcd `/server/statsd/prefix` or hostname, and workerName comes from env var
+  `WORKER_NAME`
+* `WORKER_NAME`: to be used when server start "child" processes. It modifies statsd prefix
