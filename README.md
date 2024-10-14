@@ -27,4 +27,4 @@ F4 web stack with:
 * `STATSD_APPNAME`: used to identify app in statsd and graphite, defaults to `statsDPrefix.appname-dyno-workerName` where
   `statsDPrefix` is either env `STATSD_PREFIX` or etcd `/server/statsd/prefix` or hostname, and workerName comes from env var
   `WORKER_NAME`
-* `WORKER_NAME`: to be used when server start "child" processes. It modifies statsd prefix
+* `WORKER_NAME`: to be used when server start "child" processes. It modifies statsd prefix and unique process name

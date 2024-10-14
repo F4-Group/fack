@@ -71,6 +71,17 @@ describe('uniqueProcessName', function () {
             'x-process-name': appInstanceName,
         });
     });
+
+    it(`Ensure WORKER_NAME is used`, async function () {
+        const WORKER_NAME = "worker-name";
+        handle = await runLocalServer({
+            WORKER_NAME,
+        });
+        const {data: {uniqueProcessName}} = await axios({
+            url: `http://127.0.0.1:${handle.port}/internals`,
+        });
+        expect(uniqueProcessName).to.include(WORKER_NAME);
+    });
 });
 
 describe('sdcPrefix', function () {
