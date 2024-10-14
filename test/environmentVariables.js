@@ -20,18 +20,25 @@ describe('uniqueProcessName', function () {
     });
 
     it(`Use dyno fallback without APP_INSTANCE_NAME`, async function () {
+        const LOG_HOSTNAME = 'hostname';
         handle = await runLocalServer({
             DYNO,
             // no APP_INSTANCE_NAME,
-            LOG_HOSTNAME: "hostname",
+            LOG_HOSTNAME,
         });
-        const {data: {uniqueProcessName}, headers} = await axios({
+        const {data: {uniqueProcessName, processTitle, loggerFields}, headers} = await axios({
             url: `http://127.0.0.1:${handle.port}/internals`,
         });
-        const expectedUniqueProcessName = 'fack_hostname_' + DYNO;
+        const expectedUniqueProcessName = `fack_${LOG_HOSTNAME}_${DYNO}`;
         expect(uniqueProcessName).to.equal(expectedUniqueProcessName);
         expect(headers).to.shallowDeepEqual({
             'x-process-name': expectedUniqueProcessName,
+        });
+        expect(processTitle).to.equal(`fack - listening`);
+        expect(loggerFields).to.shallowDeepEqual({
+            APP_INSTANCE_NAME: `fack_${LOG_HOSTNAME}_${DYNO}`,
+            hostname: LOG_HOSTNAME,
+            name: 'fack',
         });
     });
 

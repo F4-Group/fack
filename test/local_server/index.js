@@ -123,6 +123,8 @@ app.get('/internals', function (req, res) {
         uniqueProcessName,
         hostname,
         sdcPrefix,
+        processTitle: process.title,
+        loggerFields: logger.fields,
     });
 });
 
