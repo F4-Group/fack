@@ -1,3 +1,8 @@
+next
+==================
+
+  * Add header `x-process-name` to all responses, with uniqueProcessName as content, to simplify checking which process replied. 
+
 4.8.3 / 2023-09-28
 ==================
 

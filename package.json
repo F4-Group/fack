@@ -73,6 +73,7 @@
         "axios": "^0.20.0",
         "babel-plugin-transform-exponentiation-operator": "^6.24.1",
         "chai": "^4.2.0",
+        "chai-better-shallow-deep-equal": "^1.1.1",
         "cross-spawn": "^7.0.3",
         "eslint": "^7.9.0",
         "eslint-plugin-mocha": "^8.0.0",

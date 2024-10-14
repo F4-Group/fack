@@ -1,4 +1,6 @@
-const {expect} = require('chai');
+const chai = require('chai');
+chai.use(require('chai-better-shallow-deep-equal'));
+const {expect} = chai;
 const axios = require('axios');
 
 const DYNO = "web-1";
@@ -23,20 +25,28 @@ describe('uniqueProcessName', function () {
             // no APP_INSTANCE_NAME,
             LOG_HOSTNAME: "hostname",
         });
-        const {data: {uniqueProcessName}} = await axios({
+        const {data: {uniqueProcessName}, headers} = await axios({
             url: `http://127.0.0.1:${handle.port}/internals`,
         });
-        expect(uniqueProcessName).to.equal('fack_hostname_' + DYNO);
+        const expectedUniqueProcessName = 'fack_hostname_' + DYNO;
+        expect(uniqueProcessName).to.equal(expectedUniqueProcessName);
+        expect(headers).to.shallowDeepEqual({
+            'x-process-name': expectedUniqueProcessName,
+        });
     });
 
     it('Ensure default unique process name does not contain undefined from missing dyno', async function () {
         handle = await runLocalServer({
             LOG_HOSTNAME: 'hostname',
         });
-        const {data: {uniqueProcessName}} = await axios({
+        const {data: {uniqueProcessName}, headers} = await axios({
             url: `http://127.0.0.1:${handle.port}/internals`,
         });
-        expect(uniqueProcessName).to.equal('fack_hostname');
+        const expectedUniqueProcessName = 'fack_hostname';
+        expect(uniqueProcessName).to.equal(expectedUniqueProcessName);
+        expect(headers).to.shallowDeepEqual({
+            'x-process-name': expectedUniqueProcessName,
+        });
     });
 
     it(`Use APP_INSTANCE_NAME`, async function () {
@@ -46,10 +56,13 @@ describe('uniqueProcessName', function () {
             APP_INSTANCE_NAME: appInstanceName,
             LOG_HOSTNAME: "hostname",
         });
-        const {data: {uniqueProcessName}} = await axios({
+        const {data: {uniqueProcessName}, headers} = await axios({
             url: `http://127.0.0.1:${handle.port}/internals`,
         });
         expect(uniqueProcessName).to.equal(appInstanceName);
+        expect(headers).to.shallowDeepEqual({
+            'x-process-name': appInstanceName,
+        });
     });
 });
 
