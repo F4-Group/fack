@@ -77,10 +77,16 @@ describe('uniqueProcessName', function () {
         handle = await runLocalServer({
             WORKER_NAME,
         });
-        const {data: {uniqueProcessName}} = await axios({
+        const {data: {uniqueProcessName, processTitle, loggerFields}} = await axios({
             url: `http://127.0.0.1:${handle.port}/internals`,
         });
         expect(uniqueProcessName).to.include(WORKER_NAME);
+        expect(processTitle).to.equal(`fack-worker:${WORKER_NAME} - listening`);
+        expect(loggerFields).to.shallowDeepEqual({
+            APP_INSTANCE_NAME: `fack_automatic_test_${WORKER_NAME}`,
+            hostname: 'automatic_test',
+            name: `fack-worker:${WORKER_NAME}`,
+        });
     });
 });
 
