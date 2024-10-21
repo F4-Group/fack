@@ -16,6 +16,7 @@ module.exports = {
     i18n: require('i18next'),
     uniqueProcessName: require('./lib/uniqueProcessName'),
     buildBundles: require('./lib/buildBundles'),
+    processTitle,
 };
 
 uncaughtException.bind();
