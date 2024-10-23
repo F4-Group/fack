@@ -1,4 +1,4 @@
-next
+4.9.0 / 2024-10-23
 ==================
 
   * Add header `x-process-name` to all responses, with uniqueProcessName as content, to simplify checking which process replied. 
