@@ -1,3 +1,9 @@
+3.6.4 / 2025-01-08
+==================
+
+* fix: fix installation on Node.js above Node.js v10 (Update node-etcd to 7.0.0 for Node.js 10 compatibility (deasync))
+* fix: fix installation on Node.js below version 18 (flat 6+ requires Node.js 18, so it must stick with version 5)
+
 3.6.3 / 2021-11-30
 ==================
 
