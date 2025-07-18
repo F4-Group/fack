@@ -1,7 +1,7 @@
 ---
 
 variables:
-    NODE_VERSION: 12.18.3-buster
+    NODE_VERSION: 12
     DOCKER_YAMLLINT_VERSION: 2.0.0
 
 include:
