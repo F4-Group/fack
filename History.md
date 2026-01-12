@@ -1,4 +1,4 @@
-next
+4.9.3 / 2026-01-12
 ==================
 
   * Fixes i18next issue in nesting using multiple namespaces and lookups in fallback namespaces (see
