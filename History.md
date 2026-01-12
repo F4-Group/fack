@@ -1,3 +1,9 @@
+next
+==================
+
+  * Fixes i18next issue in nesting using multiple namespaces and lookups in fallback namespaces (see
+    https://github.com/F4-Group/i18next-node/commit/d664bbda3f421c5f40d44b5dbe97c4d57c2c64e1)
+
 4.9.2 / 2025-10-09
 ==================
 
