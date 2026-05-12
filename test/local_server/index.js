@@ -100,6 +100,12 @@ app.get('/log', function (req, res) {
     res.send('watch the log');
 });
 
+app.get('/500', function (req, res) {
+    res
+        .status(500)
+        .send('watch the log');
+});
+
 app.get('/error', function (req, res) {
     res
         .status(500)
