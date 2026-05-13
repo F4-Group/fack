@@ -113,6 +113,13 @@ app.get('/error', function (req, res) {
         .send('watch the log');
 });
 
+app.get('/error400', function (req, res) {
+    res
+        .status(400)
+        .setError(new Error('Request error'))
+        .send('watch the log');
+});
+
 app.get('/internals', function (req, res) {
     const {
         appName,
