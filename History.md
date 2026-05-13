@@ -1,3 +1,9 @@
+4.9.4 / 2026-05-13
+==================
+
+  * fix: correctly log requests with an error
+  * feat: log as errors requests with status code 5xx
+
 4.9.3 / 2026-01-12
 ==================
 
