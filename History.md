@@ -1,3 +1,8 @@
+4.10.0 / 2026-05-19
+===================
+
+  * feat: do not always log a response in error when an error is set
+
 4.9.4 / 2026-05-13
 ==================
 
