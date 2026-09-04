@@ -1,8 +1,14 @@
-4.11.0 / 2026-09-04
+4.11.1 / 2026-09-04
 ===================
 
   * feat(font-awesome): upgrade to Font Awesome 4.7
   * fix: prevent Chrome from closing modal on outside mouse release
+
+4.11.0 / 2026-09-04
+===================
+
+  * Published by error
+
 
 4.10.0 / 2026-05-19
 ===================
